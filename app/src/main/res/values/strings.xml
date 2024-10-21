@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Banco-ALMAAR</string>
+
+    <!--    LOGIN VIEW-->
+    <string name="sign_in_text">Iniciar sesión</string>
+    <string name="user_hint">Introducir usuario</string>
+    <string name="password_hint">Introducir contraseña</string>
+    <string name="sign_in_button_text">Entrar</string>
+    <string name="exit_button_text">Salir</string>
+    <string name="login_error">Credenciales inválidas</string>
+    <string name="empty_data">Introduzca usuario y contraseña</string>">
+
+    <!--    HOME VIEW-->
+    <string name="welcome_text">Bienvenido/a</string>">
+    <string name="account_number">2044333S</string>
+
+</resources>
