@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Banco-ALMAAR</string>
+
+    <!--    LOGIN VIEW-->
+    <string name="sign_in_text">Sign In</string>
+    <string name="user_hint">Enter username</string>
+    <string name="password_hint">Enter password</string>
+    <string name="sign_in_button_text">ENTER</string>
+    <string name="exit_button_text">EXIT</string>
+    <string name="login_error">Invalid credentials</string>
+    <string name="empty_data">Enter username and password</string>">
+
+    <!--    HOME VIEW-->
+    <string name="welcome_text">Welcome</string>">
+    <string name="account_number">2044333S</string>
+    <string name="posicion_global">GLOBAL POSITION</string>
+    <string name="global_posicion_text">GLOBAL POSITION</string>
+    <string name="movements_text">MOVEMENTS</string>
+    <string name="transfers_text">TRANSFERS</string>
+    <string name="change_password_text">CHANGE PASSWORD</string>
+    <string name="promotions_text">PROMOTIONS</string>
+    <string name="moneyboxs_text">ATMS</string>
+
+</resources>

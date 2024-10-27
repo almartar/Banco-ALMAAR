@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -62,6 +62,95 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/fab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="2"
+            app:rowCount="4"
+            app:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/global_positicon_button_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/global_posicion_text"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <!-- Botón 2 -->
+            <Button
+                android:id="@+id/movements_button_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/movements_text"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/transfers_button_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/transfers_text"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/change_password_button_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password_text"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/promotions_button_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/promotions_text"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/moneyboxs_button_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/moneyboxs_text"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/exit_button_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/exit_button_text"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+        </androidx.gridlayout.widget.GridLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/bankicon"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
@@ -85,95 +174,5 @@
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/fab"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
 
-        <androidx.gridlayout.widget.GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:padding="16dp"
-            app:alignmentMode="alignMargins"
-            app:columnCount="1"
-            app:layout_constraintBottom_toTopOf="@+id/fab"
-            app:layout_constraintTop_toBottomOf="@+id/cardView"
-            app:rowCount="7"
-            app:useDefaultMargins="true">
-
-            <Button
-                android:id="@+id/global_positicon_button_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/global_posicion_text"
-                android:drawableLeft="@drawable/handsicon"
-                app:layout_rowWeight="1" />
-
-            <Button
-                android:id="@+id/movements_button_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/movements_text"
-                android:drawableLeft="@drawable/movementsicon"
-                app:layout_rowWeight="1" />
-
-            <Button
-                android:id="@+id/transfers_button_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/transfersicon"
-                android:text="@string/transfers_text"
-                app:layout_rowWeight="1" />
-
-            <Button
-                android:id="@+id/change_password_button_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/pencilicon"
-                android:text="@string/change_password_text"
-                app:layout_rowWeight="1" />
-
-            <Button
-                android:id="@+id/promotions_button_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/handsicon"
-                android:text="@string/promotions_text"
-                app:layout_rowWeight="1" />
-
-            <Button
-                android:id="@+id/moneyboxs_button_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/boxmovimenticon"
-                android:text="@string/moneyboxs_text"
-                app:layout_rowWeight="1" />
-
-
-            <Button
-                android:id="@+id/exit_button_id"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/arrowicon"
-                android:text="@string/exit_button_text"
-                app:layout_rowWeight="1" />
-        </androidx.gridlayout.widget.GridLayout>
-
-
-    </ScrollView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/bankicon"
-        app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
-        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar"
-        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

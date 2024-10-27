@@ -5,13 +5,20 @@
     <string name="sign_in_text">Iniciar sesión</string>
     <string name="user_hint">Introducir usuario</string>
     <string name="password_hint">Introducir contraseña</string>
-    <string name="sign_in_button_text">Entrar</string>
-    <string name="exit_button_text">Salir</string>
+    <string name="sign_in_button_text">ENTRAR</string>
+    <string name="exit_button_text">SALIR</string>
     <string name="login_error">Credenciales inválidas</string>
     <string name="empty_data">Introduzca usuario y contraseña</string>">
 
     <!--    HOME VIEW-->
     <string name="welcome_text">Bienvenido/a</string>">
     <string name="account_number">2044333S</string>
+    <string name="posicion_global">POSICION GLOBAL</string>
+    <string name="global_posicion_text">POSICION GLOBAL</string>
+    <string name="movements_text">MOVIMIENTOS</string>
+    <string name="transfers_text">TRANSFERENCIAS</string>
+    <string name="change_password_text">CAMBIAR CONTRASEÑA</string>
+    <string name="promotions_text">PROMOCIONES</string>
+    <string name="moneyboxs_text">CAJEROS</string>
 
 </resources>
