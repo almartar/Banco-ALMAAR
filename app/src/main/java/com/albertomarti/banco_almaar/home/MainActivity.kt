@@ -22,5 +22,4 @@ class MainActivity : AppCompatActivity() {
         val dni = intent.getStringExtra("DNI_k")
         binding.dniId.setText(dni)
     }
-
 }

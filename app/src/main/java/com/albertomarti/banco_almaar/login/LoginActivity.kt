@@ -11,6 +11,7 @@ import com.albertomarti.banco_almaar.R
 import com.albertomarti.banco_almaar.databinding.ActivityLoginBinding
 import com.albertomarti.banco_almaar.home.MainActivity
 
+
 class LoginActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
 
@@ -24,6 +25,7 @@ class LoginActivity : AppCompatActivity() {
     private fun setUpView() {
         val dniSample = "20831271"
         val passwordSample = "12345678"
+
         binding.signInButtonId.setOnClickListener {
             val dni = binding.userEditTextId.text.toString()
             val password = binding.passwordEditTextId.text.toString()
@@ -39,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.exitButtonId.setOnClickListener {
-            this.finishAffinity();
+            finish()
         }
     }
 
