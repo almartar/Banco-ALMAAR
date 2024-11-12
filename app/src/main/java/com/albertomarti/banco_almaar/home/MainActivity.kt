@@ -1,5 +1,6 @@
 package com.albertomarti.banco_almaar.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -7,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.albertomarti.banco_almaar.R
 import com.albertomarti.banco_almaar.databinding.ActivityLoginBinding
 import com.albertomarti.banco_almaar.databinding.ActivityMainBinding
+import com.albertomarti.banco_almaar.options.TransferActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -21,5 +23,11 @@ class MainActivity : AppCompatActivity() {
     private fun setUpView() {
         val dni = intent.getStringExtra("DNI_k")
         binding.dniId.setText(dni)
+
+        binding.transfersButtonId.setOnClickListener {
+            val intent = Intent(this, TransferActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

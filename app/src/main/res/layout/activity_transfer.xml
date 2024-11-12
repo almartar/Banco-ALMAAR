@@ -20,9 +20,8 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="35sp"
-            />
+            android:text="Transferencias"
+            android:textSize="35sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -37,7 +36,7 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Elige tu cuenta:" />
     </LinearLayout>
 
     <LinearLayout
@@ -62,21 +61,28 @@
         android:gravity="center_horizontal|center_vertical"
         android:layout_marginHorizontal="20dp">
 
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RadioButton"
-            android:layout_marginHorizontal="5dp"
-            />
+        <RadioGroup
+            android:id="@+id/radioGroup_opciones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RadioButton"
-            android:layout_marginHorizontal="5dp"
-            />
+            <RadioButton
+                android:id="@+id/radioButton_propia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="RadioButton"
+                tools:text="Cuenta propia" />
+
+            <RadioButton
+                android:id="@+id/radioButton_ajena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="Cuenta ajena" />
+        </RadioGroup>
 
     </LinearLayout>
 
@@ -88,10 +94,30 @@
         android:gravity="center_vertical|center_horizontal"
         android:layout_marginHorizontal="20dp">
 
-        <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/spinner_CuentasPropiasTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editText_numCuentaAjena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Escribe el num. de cuenta ajena"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -106,22 +132,26 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_weight="1"
+            android:text="Cantidad:" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/text_cantidad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text"
-            android:text="Name" />
+            android:text="Name"
+            android:textSize="15sp" />
 
         <Spinner
-            android:id="@+id/spinner4"
+            android:id="@+id/spinnerMoneda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            android:layout_weight="1" />
 
     </LinearLayout>
 
@@ -135,12 +165,12 @@
         android:layout_marginHorizontal="20dp">
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/enviarJustificante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:foregroundGravity="clip_horizontal"
             android:gravity="center"
-            android:text="CheckBox" />
+            android:text="Enviar justificante" />
     </LinearLayout>
 
     <LinearLayout
@@ -155,22 +185,25 @@
         >
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSEND"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
-            android:gravity="center"
             android:layout_marginHorizontal="15dp"
-            />
+            android:layout_weight="1"
+            android:background="#00FF0B"
+            android:gravity="center"
+            android:text="Enviar" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonCANCEL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
-            android:gravity="center"
             android:layout_marginHorizontal="15dp"
-            />
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:text="Cancelar" />
+
     </LinearLayout>
 
 </LinearLayout>
