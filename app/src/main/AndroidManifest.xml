@@ -20,6 +20,10 @@
             android:exported="false"
             android:theme="@style/CustomAppTheme" />
         <activity
+            android:name=".options.PosicionGlobalActivity"
+            android:exported="false"
+            android:theme="@style/CustomAppTheme" />
+        <activity
             android:name=".login.LoginActivity"
             android:exported="true"
             android:theme="@style/CustomAppTheme">
