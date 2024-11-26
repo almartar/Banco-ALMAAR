@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.albertomarti.banco_almaar.R
 import com.albertomarti.banco_almaar.databinding.ActivityLoginBinding
 import com.albertomarti.banco_almaar.databinding.ActivityMainBinding
+import com.albertomarti.banco_almaar.movements.MovementsActivity
 import com.albertomarti.banco_almaar.options.PosicionGlobalActivity
 import com.albertomarti.banco_almaar.options.TransferActivity
 
@@ -32,6 +33,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.globalPositiconButtonId.setOnClickListener{
             val intent = Intent(this, PosicionGlobalActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.movementsButtonId.setOnClickListener{
+            val intent = Intent(this, MovementsActivity::class.java)
             startActivity(intent)
         }
     }
