@@ -1,3 +1,5 @@
+import kotlin.script.experimental.jvm.util.KotlinJars.stdlib
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -39,10 +41,11 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.androidx.appcompat.v161)
+    implementation(libs.material.v190)
+   
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.gridlayout)
@@ -50,3 +53,4 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+

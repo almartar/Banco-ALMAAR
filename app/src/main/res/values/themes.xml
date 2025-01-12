@@ -6,8 +6,7 @@
     </style>
 
     <style name="Theme.BancoALMAAR" parent="Base.Theme.BancoALMAAR" />
-
-    <style name="CustomAppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="CustomAppTheme" parent="Base.Theme.BancoALMAAR">
         <item name="colorPrimary">@color/green_primary</item>
         <item name="colorPrimaryVariant">@color/green_dark</item>
         <item name="colorOnPrimary">@android:color/white</item>
