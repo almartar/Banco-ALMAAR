@@ -23,6 +23,9 @@
             android:name=".options.PosicionGlobalActivity"
             android:exported="false"
             android:theme="@style/CustomAppTheme" />
+        <activity android:name=".movements.MovementsActivity"
+            android:exported="false"
+            android:theme="@style/CustomAppTheme" />
         <activity
             android:name=".login.LoginActivity"
             android:exported="true"
